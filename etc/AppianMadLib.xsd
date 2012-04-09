@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xsd:schema
+	xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+	xmlns:tns='http://appian.com/types/pluginexample'
+	targetNamespace='http://appian.com/types/pluginexample'>
+
+	<xsd:complexType name='AppianMadLib'>
+		<xsd:sequence>
+			<xsd:element name='id' type='xsd:int' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+					@Id
+					@GeneratedValue
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='title' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(length=1000, nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='username' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='noun1' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='adjective1' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='number1' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='noun2' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='noun3' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='adjective2' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='adjective3' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+			<xsd:element name='noun4' type='xsd:string' minOccurs='1'>
+				<xsd:annotation><xsd:appinfo source='appian.jpa'>
+					@Column(nullable=false)
+				</xsd:appinfo></xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

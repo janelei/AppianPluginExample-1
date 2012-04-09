@@ -1,0 +1,20 @@
+<appian-plugin name="Appian Plugin Example" key="com.appiancorp.pluginexample">
+
+  <plugin-info>
+    <description>Appian World 2012 Example</description>
+    <vendor name="Appian Corporation" url="http://www.appian.com" />
+    <version>1.0.0</version>
+    <application-version min="6.6.0" />
+  </plugin-info>
+
+  <datatype key="AppianMadLib" name="Appian MadLib">
+    <class>com.appian.types.pluginexample.AppianMadLib</class>
+  </datatype>
+
+  
+  <function key="GenerateAppianMadLibText" class="com.appiancorp.pluginexample.GenerateAppianMadLibFunction"/>
+
+
+  <smart-service name="Save Appian MadLib" key="SaveAppianMadLib"
+    class="com.appiancorp.pluginexample.GenerateAppianMadLibSmartService" />
+</appian-plugin>
