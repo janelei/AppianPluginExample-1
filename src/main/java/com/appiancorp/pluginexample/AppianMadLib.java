@@ -6,7 +6,7 @@
 //
 
 
-package com.appian.types.pluginexample;
+package com.appiancorp.pluginexample;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -24,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="noun1" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="noun2" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -42,7 +41,6 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AppianMadLib", namespace="http://appian.com/types/pluginexample", propOrder = {
-    "id",
     "title",
     "noun1",
     "noun2",
@@ -53,7 +51,6 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class AppianMadLib {
 
-    protected int id;
     @XmlElement(required = true)
     protected String title;
     @XmlElement(required = true)
@@ -69,22 +66,6 @@ public class AppianMadLib {
     @XmlElement(required = true)
     protected String adjective3;
 
-
-    /**
-     * Gets the value of the id property.
-     * 
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets the value of the id property.
-     * 
-     */
-    public void setId(int value) {
-        this.id = value;
-    }
 
     /**
      * Gets the value of the title property.
