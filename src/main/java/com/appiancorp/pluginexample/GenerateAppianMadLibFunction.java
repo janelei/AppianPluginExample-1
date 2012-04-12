@@ -4,11 +4,13 @@ import org.apache.log4j.Logger;
 
 import com.appiancorp.services.ServiceContext;
 import com.appiancorp.suiteapi.common.exceptions.AppianException;
-import com.appiancorp.suiteapi.expression.annotations.AppianScriptingFunctionsCategory;
 import com.appiancorp.suiteapi.expression.annotations.Function;
+import com.appiancorp.suiteapi.expression.annotations.HiddenCategory;
 import com.appiancorp.suiteapi.expression.annotations.Parameter;
 
-@AppianScriptingFunctionsCategory
+//@AppianScriptingFunctionsCategory
+//This is how to deprecate a function:
+@HiddenCategory
 public class GenerateAppianMadLibFunction {
 
   private static final Logger LOG = Logger.getLogger(GenerateAppianMadLibFunction.class);

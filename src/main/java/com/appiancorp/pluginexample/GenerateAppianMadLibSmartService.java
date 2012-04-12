@@ -22,9 +22,11 @@ import com.appiancorp.suiteapi.process.framework.Input;
 import com.appiancorp.suiteapi.process.framework.MessageContainer;
 import com.appiancorp.suiteapi.process.framework.Required;
 import com.appiancorp.suiteapi.process.framework.SmartServiceContext;
-import com.appiancorp.suiteapi.process.palette.ConnectivityServices;
+import com.appiancorp.suiteapi.process.palette.PaletteInfo;
 
-@ConnectivityServices
+//@ConnectivityServices
+//This is how to deprecate a smart service:
+@PaletteInfo(paletteCategory="#Deprecated#", palette="#Deprecated#")
 public class GenerateAppianMadLibSmartService extends AppianSmartService {
 
   private static final Logger LOG = Logger.getLogger(GenerateAppianMadLibSmartService.class);
