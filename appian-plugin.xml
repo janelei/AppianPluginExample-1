@@ -4,7 +4,7 @@
     <description>Appian World 2012 Example</description>
     <vendor name="Appian Corporation" url="http://www.appian.com" />
     <version>1.0.1</version>
-    <application-version min="6.6.0" />
+    <application-version min="6.6.1" />
   </plugin-info>
 
   <datatype key="AppianMadLib" name="Appian MadLib">
