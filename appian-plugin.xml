@@ -3,7 +3,7 @@
   <plugin-info>
     <description>Appian World 2012 Example</description>
     <vendor name="Appian Corporation" url="http://www.appian.com" />
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <application-version min="6.6.0" />
   </plugin-info>
 
@@ -11,8 +11,10 @@
     <class>com.appiancorp.pluginexample.AppianMadLib</class>
   </datatype>
 
-  <function key="GenerateAppianMadLibText" class="com.appiancorp.pluginexample.GenerateAppianMadLibFunction"/>
+  <function key="GenerateAppianMadLibText" 
+            class="com.appiancorp.pluginexample.GenerateAppianMadLibFunction"/>
 
   <smart-service name="Save Appian MadLib" key="SaveAppianMadLib"
     class="com.appiancorp.pluginexample.GenerateAppianMadLibSmartService" />
+    
 </appian-plugin>
